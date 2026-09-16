@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charley Baker — Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            background: #fafaf8;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero section */
+        .hero {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 60px;
+            margin-bottom: 80px;
+            align-items: start;
+        }
+
+        .headshot {
+            width: 280px;
+            height: 280px;
+            border-radius: 8px;
+            object-fit: cover;
+            background: #e8e6e1;
+        }
+
+        .hero-text h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .resume-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            padding: 10px 16px;
+            background: #2c2c2c;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .resume-link:hover {
+            background: #1a1a1a;
+        }
+
+        .bio-section {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid #d0ccc8;
+        }
+
+        .bio-section h2 {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            color: #666;
+        }
+
+        .bio-blank {
+            min-height: 120px;
+            background: white;
+            border: 1px dashed #d0ccc8;
+            border-radius: 4px;
+            padding: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: -0.5px;
+        }
+
+        .document-item {
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e8e6e1;
+        }
+
+        .document-item:last-child {
+            border-bottom: none;
+        }
+
+        .document-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .document-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 2px solid #2c2c2c;
+            transition: opacity 0.2s;
+        }
+
+        .document-title a:hover {
+            opacity: 0.7;
+        }
+
+        .description-blank {
+            min-height: 100px;
+            background: white;
+            border: 1px dashed #d0ccc8;
+            border-radius: 4px;
+            padding: 16px;
+            font-size: 14px;
+            color: #999;
+            margin-top: 16px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .headshot {
+                width: 100%;
+                height: auto;
+                max-width: 280px;
+            }
+
+            .hero-text h1 {
+                font-size: 24px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .container {
+                padding: 30px 16px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero section -->
+        <div class="hero">
+            <img src="Charley Baker headshot.jpg" alt="Charley Baker" class="headshot">
+            <div class="hero-text">
+                <h1>Charley Baker</h1>
+                <a href="CharleyBakerResume.pdf" class="resume-link">Download CV</a>
+                <div class="bio-section">
+                    <h2>About</h2>
+                    <div class="bio-blank">Born and raised in Vancouver, BC, I am an economics and development professional with a strong foundation in quantitative analysis, research and financial markets. I completed a Bachelor of Arts in Joint Honours Economics and Global Development at Queen’s University, where I was also a varsity women’s volleyball athlete, before pursuing a Master of Specialized Economic Analysis in International Trade, Finance and Development at the Barcelona School of Economics, which I completed in July 2026. My professional experience spans workforce planning and business intelligence at Vancity, macroeconomic and development policy research at the John Deutsch Institute, and equity research in critical assets at Haywood Securities. Across these roles, I have developed strong analytical, technical and communication skills, with experience in SQL, Excel, Power BI, R, Python and Stata. I am eager to bring my curiosity, initiative and collaborative spirit to a team where I can continue learning and contribute meaningfully.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coursework section -->
+        <section class="section">
+            <h2>Coursework</h2>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/Climate Essay.pdf">Climate Essay</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/Country Study_Economic Analysis.pdf">Country Study: Economic Analysis</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/Dev_Econ_Problem_Set.pdf">Dev Econ Problem Set</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/ECON 492 REPORT (4).pdf">ECON 492 Report</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/GeospatialAssignment2">Geospatial Assignment</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/IDD_Final_Project (1).pdf">IDD Final Project</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/Policy Brief #2">Policy Brief #2</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/PTAs.pdf">PTAs</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/Social_Econ_Paper___...Strategy__Copy_ (1).pdf">Social Economics Paper</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/THESIS">Thesis</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="coursework/Haywood Securities LoR - Charley Baker.pdf">Haywood Securities Letter of Reference</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+        </section>
+
+        <!-- Haywood section -->
+        <section class="section">
+            <h2>Haywood Securities</h2>
+
+            <div class="document-item">
+                <div class="document-title"><a href="haywood/COMMODITY PRICE UPDATE.pdf">Commodity Price Update</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="haywood/Exploration Write-up.pdf">Exploration Write-up</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+        </section>
+
+        <!-- JDI section -->
+        <section class="section">
+            <h2>John Deutsch Institute</h2>
+
+            <div class="document-item">
+                <div class="document-title"><a href="jdi/Dr David Card - Mackintosh Lecture.docx">Dr David Card — Mackintosh Lecture</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="jdi/Lasting Disruption Announcement.docx">Lasting Disruption Announcement</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="jdi/Robert Clark - John Rae Prize.docx">Robert Clark — John Rae Prize</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="jdi/Tariff Writeup.pdf">Tariff Writeup</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
