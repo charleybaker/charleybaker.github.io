@@ -33,12 +33,66 @@
             align-items: start;
         }
 
+        .hero-sidebar {
+            display: flex;
+            flex-direction: column;
+        }
+
         .headshot {
             width: 280px;
             height: 280px;
             border-radius: 8px;
             object-fit: cover;
             background: #e8e6e1;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            display: block;
+            color: #2c2c2c;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 1px solid #2c2c2c;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            transition: opacity 0.2s;
+            width: fit-content;
+        }
+
+        .social-links a:hover {
+            opacity: 0.7;
+        }
+
+        .skills-list {
+            margin-bottom: 30px;
+        }
+
+        .skills-list h3 {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            color: #666;
+        }
+
+        .skills-list ul {
+            list-style: none;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .skills-list li:before {
+            content: "• ";
+            color: #2c2c2c;
+            font-weight: bold;
+            margin-right: 8px;
         }
 
         .hero-text h1 {
@@ -180,7 +234,24 @@
     <div class="container">
         <!-- Hero section -->
         <div class="hero">
-            <img src="Charley Baker headshot.jpg" alt="Charley Baker" class="headshot">
+            <div class="hero-sidebar">
+                <img src="Charley Baker headshot.jpg" alt="Charley Baker" class="headshot">
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/charley-baker-/" target="_blank">LinkedIn</a>
+                </div>
+
+                <div class="skills-list">
+                    <h3>Key Skills</h3>
+                    <ul>
+                        <li>Python, R, SQL</li>
+                        <li>Econometric analysis</li>
+                        <li>Data visualisation</li>
+                        <li>Policy research</li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="hero-text">
                 <h1>Charley Baker</h1>
                 <a href="CharleyBakerResume.pdf" class="resume-link">Download CV</a>
@@ -191,9 +262,19 @@
             </div>
         </div>
 
+        <!-- Thesis section -->
+        <section class="section">
+            <h2>Thesis</h2>
+
+            <div class="document-item">
+                <div class="document-title"><a href="CourseWork/THESIS.pdf">Structural Transformation in Africa: Disaggregating Services and Productivity Dynamics</a></div>
+                <div class="description-blank">This thesis examines the sectoral reallocation of labour across African economies, focusing on why agricultural workers are flowing into consumer services rather than manufacturing. Using a multi-sector growth model calibrated to thirteen African economies over 1990–2018, the research decomposes structural transformation into productivity and reallocation channels. The counterfactual analysis reveals substantial heterogeneity across countries in the role consumer service productivity plays in driving agricultural exit, establishing that the developmental significance of service sector expansion depends critically on underlying productivity dynamics rather than employment scale alone. The work contributes methodologically through the extension of Duarte and Restuccia's framework to isolate consumer services from the broader service aggregate, and provides empirical evidence relevant to understanding low-income country development trajectories.</div>
+            </div>
+        </section>
+
         <!-- CourseWork section -->
         <section class="section">
-            <h2>CourseWork</h2>
+            <h2>Coursework</h2>
 
             <div class="document-item">
                 <div class="document-title"><a href="CourseWork/Climate Essay.pdf">Climate Damage Estimation</a></div>
@@ -239,16 +320,6 @@
                 <div class="document-title"><a href="CourseWork/Social_Econ_Paper___Empirical_Strategy__Copy_ (1).pdf">Remote Work and Mental Health: Geographic Heterogeneity</a></div>
                 <div class="description-blank">This paper extends aggregate findings on remote work to examine heterogeneous effects across UK regions and household types, revealing concentrated impacts among single mothers and non-metropolitan workers. Using doubly robust differences-in-differences estimation and occupational teleworkability as an exogenous source of variation, the analysis demonstrates that null aggregate effects mask meaningful variation in how flexible work shapes mental health outcomes.</div>
             </div>
-
-            <div class="document-item">
-                <div class="document-title"><a href="CourseWork/THESIS.pdf">Structural Transformation in Africa: Disaggregating Services and Productivity Dynamics</a></div>
-                <div class="description-blank">This thesis examines the sectoral reallocation of labour across African economies, focusing on why agricultural workers are flowing into consumer services rather than manufacturing. Using a multi-sector growth model calibrated to thirteen African economies over 1990–2018, the research decomposes structural transformation into productivity and reallocation channels. The counterfactual analysis reveals substantial heterogeneity across countries in the role consumer service productivity plays in driving agricultural exit, establishing that the developmental significance of service sector expansion depends critically on underlying productivity dynamics rather than employment scale alone. The work contributes methodologically through the extension of Duarte and Restuccia's framework to isolate consumer services from the broader service aggregate, and provides empirical evidence relevant to understanding low-income country development trajectories.</div>
-            </div>
-
-            <div class="document-item">
-                <div class="document-title"><a href="Haywood Securities LoR - Charley Baker.pdf">Haywood Securities Letter of Reference</a></div>
-                <div class="description-blank">[100-word description]</div>
-            </div>
         </section>
 
         <!-- Haywood section -->
@@ -264,13 +335,16 @@
                 <div class="document-title"><a href="haywood/Exploration Write-up.pdf">Exploration Write-up</a></div>
                 <div class="description-blank">[100-word description]</div>
             </div>
+
+            <div class="document-item">
+                <div class="document-title"><a href="Haywood Securities LoR - Charley Baker.pdf">Letter of Reference</a></div>
+                <div class="description-blank">[100-word description]</div>
+            </div>
         </section>
 
         <!-- JDI section -->
         <section class="section">
             <h2>John Deutsch Institute</h2>
-                 <div class="description-blank">During my time at Queen's, I conducted research and writing for the John Deutsch Institute, contributing to the institute's policy analysis and editorial work whilst gaining practical experience in research communication. My contributions included producing policy briefs on contemporary economic issues and editing major research announcements, developing skills in translating complex economic research for broad audiences.</div>
-                 </div>
 
             <div class="document-item">
                 <div class="document-title"><a href="JDI/Tariff Writeup.pdf">Canada-U.S. Trade War: Asymmetric Toll, 02/2025</a></div>
@@ -287,11 +361,10 @@
                 <div class="description-blank">Coverage of Dr. Robert Clark's John Rae Award recognition for his research on competition policy and regulation, particularly his work on banking collusion, mortgage markets, and failed-bank resolution mechanisms.</div>
             </div>
 
-             <div class="document-item">
+            <div class="document-item">
                 <div class="document-title"><a href="JDI/Dr David Card - Mackintosh Lecture.docx">Dr David Card Mackintosh Lecture</a></div>
                 <div class="description-blank">An account of Nobel laureate David Card's 2024 lecture at Queen's University on using natural experiments and empirical evidence to evaluate causal policy effects, reflecting on the mentorship that shaped his career in labour economics.</div>
             </div>
-
         </section>
     </div>
 </body>
